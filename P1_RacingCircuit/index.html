@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- library -->
+    <script src="p5.min.js"></script>
+    <title>Tilter Racing Circuit</title>
+
+    <!-- CSS style  -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div id="game-container">
+    <h1>Racing Game</h1>
+    <div id="controls-info">
+        <div class="player-controls">
+            <h3> Player 1 testing control</h3>
+            <p>steer</p>
+            <p>Z: brake (button A)</p>
+            <p>X: active booster (button B)</p>
+            <p>C: shield (A+B)</p>
+        </div>
+
+        <div class="player-controls">
+            <h3> Player 2 testing control</h3>
+            <p>A D: steer</p>
+            <p>Q: brake (button A)</p>
+            <p>E: active booster (button B)</p>
+            <p>W: shield (A+B)</p>
+        </div>
+    </div>
+    <button id="microbit1"> Connect microbit Player 1</button>
+    <button id="microbit2"> Connect microbit Player 2</button>
+   </div>
+
+
+   <!-- script loader -->
+    <script src="MainJS/utils/constants.js"></script>
+    <script src="MainJS/Classes/Player.js"></script>
+    <script src="MainJS/Classes/Obstacle.js"></script>
+    <script src="MainJS/Classes/Track.js"></script>
+    <script src="MainJS/Classes/UI.js"></script>
+    <script src="MainJS/managers/ObstacleManager.js"></script>
+    <script src="MainJS/managers/CollisionManager.js"></script>
+    <script src="MainJS/microbit/Controller.js"></script>
+    <script src="MainJS/Classes/Game.js"></script>
+
+    <script src="MainJS/sketch.js"></script>
+</body>
+</html>
